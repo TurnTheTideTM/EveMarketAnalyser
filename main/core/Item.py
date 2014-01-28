@@ -20,10 +20,10 @@ class TradingBook:
         """
         Returns the assciated order and buy book.
         """
-        return self._idToOrders.get(itemId)[:]  # shallowcopy of what is in the list
+        return self._idToOrders.get(itemId) # shallowcopy of what is in the list
         
     def getBuyOrderBook(self, itemId):
-        return self._idToOrders.get(itemId, {})[0]
+        return self._idToOrders.get(itemId)[0]
     
     def getSellOrderBook(self, itemId):
-        return self._idToOrders.get(itemId, {})[1]
+        return self._idToOrders.get(itemId)[1]
