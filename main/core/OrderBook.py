@@ -12,9 +12,9 @@ class Mode:
 
 class OrderBook:
     def __init__(self, mode):
-        self._mode = mode # Fuer backreference und zur
+        self._mode = mode   # Fuer backreference und zur
                             # Vermeidung von versehentlichen puts
         self.orders = []
-        
+
     def getMode(self):
         return self._mode
