@@ -22,4 +22,7 @@ class TradingBook:
         return self._idToOrders.get(itemId)[:] ## shallowcopy of what is in the list
         
     def getBuyOrderBook(self, itemId):
-        return self._idToOrders.get(itemId, {}).get('b', OrderBook())
+        return self._idToOrders.get(itemId, {})[0]
+    
+    def getSellOrderBook(self, itemId):
+        return self._idToOrders.get(itemId, {})[1]
