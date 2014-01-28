@@ -1,6 +1,6 @@
 __author__ = 'RV Administrator'
 
-from OrderBook import *
+from .OrderBook import *
 from collections import defaultdict
 
 #class Item(object):
