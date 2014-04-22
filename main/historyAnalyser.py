@@ -136,7 +136,8 @@ def finddeals(data, taxes):
 
 if __name__ == "__main__":
     taxes = [0.0077, 0.009]
-    dataset = cPickle.load(open("Data/Processed/historydata_Loc_10000002.dict", 'r'))
+    hub = 10000043
+    dataset = cPickle.load(open("Data/Processed/historydata_Loc_"+str(hub)+".dict", 'r'))
     finddeals(dataset, taxes)
 
 

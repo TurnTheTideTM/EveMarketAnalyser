@@ -93,5 +93,7 @@ def process_data(data):
 
 if __name__ == "__main__":
     typeids = cPickle.load(open("Data/Processed/activeItems.list", 'r'))
-    update(typeids)
+    typeids = [34, 35]
+    hub = 10000043
+    update(typeids, hub)
     #data = cPickle.load(open("Data/Processed/historydata_Loc_10000043.dict", 'r'))
