@@ -1,8 +1,9 @@
+from main import nicedict
+
 __author__ = 'RV Administrator'
 
 from xml.dom import minidom as dom
 import urllib2
-import nicedict
 
 
 def parse(filename):

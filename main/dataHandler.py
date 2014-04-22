@@ -1,7 +1,8 @@
+from main import xmlHandler
+
 __author__ = 'RV Administrator'
 
 import urllib2
-import xmlHandler
 import cPickle
 
 alldata = {}
